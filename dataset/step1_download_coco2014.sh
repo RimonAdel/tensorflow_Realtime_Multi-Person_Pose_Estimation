@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 cd /content
-mkdir /content/dataset
-cd /content/dataset
+mkdir /content/datasets
+mkdir /content/datasets/coco_2017_dataset
+cd /content/datasets/coco_2017_dataset
+
 echo "Downloading train2017..."
 wget http://images.cocodataset.org/zips/train2017.zip
 unzip train2017.zip
