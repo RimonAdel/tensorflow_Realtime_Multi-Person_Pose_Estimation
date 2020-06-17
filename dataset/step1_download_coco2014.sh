@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
+
 cd /content
-mkdir /dataset
-# echo "Downloading train2014..."
-# wget http://images.cocodataset.org/zips/train2014.zip
-# unzip train2014.zip
-# rm train2014.zip 
+mkdir /content/dataset
+cd /content/dataset
+echo "Downloading train2017..."
+wget http://images.cocodataset.org/zips/train2017.zip
+unzip train2017.zip
+rm train2017.zip 
 
-# echo "Downloading val2014..."
-# wget http://images.cocodataset.org/zips/val2014.zip
-# unzip val2014.zip
-# rm val2014.zip
+echo "Downloading val2017..."
+wget http://images.cocodataset.org/zips/val2017.zip
+unzip val2017.zip
+rm val2017.zip
 
-# echo "Downloading annotations..."
-# wget http://images.cocodataset.org/annotations/annotations_trainval2014.zip
-# unzip annotations_trainval2014.zip
-# rm annotations_trainval2014.zip
-
+echo "Downloading annotations..."
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+unzip annotations_trainval2017.zip
+rm annotations_trainval2017.zip
