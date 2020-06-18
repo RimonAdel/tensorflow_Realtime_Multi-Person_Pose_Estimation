@@ -299,8 +299,8 @@ if __name__ == '__main__':
 
     print(f"Training samples: {ds_train_size} , Validation samples: {ds_val_size}")
 
-    steps_per_epoch = ds_train_size // batch_size
-    steps_per_epoch_val = ds_val_size // batch_size
+    steps_per_epoch = 2000 // batch_size
+    steps_per_epoch_val = 1000 // batch_size
 
     model = CmuModel(masked_outputs=True)
     model.build(input_shape=[tf.TensorShape([None, 368, 368, 3]),
